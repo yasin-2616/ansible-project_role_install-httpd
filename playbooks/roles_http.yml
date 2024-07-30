@@ -1,0 +1,6 @@
+---
+- name: install httpd and changes tp firewall
+  hosts: all
+  roles:
+    - httpd_setup
+    - httpd_firewalld_setup  

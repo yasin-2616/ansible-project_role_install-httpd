@@ -1,0 +1,7 @@
+---
+# handlers file for httpd_firewalld_setup
+- name: reload the firewall
+  service:
+    name: firewalld
+    state: reloaded
+  become: true    
